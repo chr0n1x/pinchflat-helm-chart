@@ -1,4 +1,4 @@
-{{ $namespace := .Values.namespace }}
+{{- $namespace := .Values.namespace -}}
 {{- if .Values.persistence.enabled }}
 {{ with .Values.persistence }}
 apiVersion: v1
