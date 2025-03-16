@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pinchflat
+  namespace: {{ .Values.namespace | default "pinchflat" }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pinchflat
+  template:
+    metadata:
+      labels:
+        app: pinchflat
+    spec:
+      containers:
+        - name: pinchflat-app
+          image: {{ .Values.deployment.image | default "ghcr.io/kieraneglin/pinchflat:latest" }}
+          ports:
+            - containerPort: 8945
+          env:
+            - name: TZ
+              value: {{ .Values.deployment.env.TZ | default "America/New_York" }}
+      {{- if .Values.persistence.enabled }}
+          volumeMounts:
+          - name: downloads-volume
+            mountPath: /downloads
+      volumes:
+        - name: downloads-volume
+          persistentVolumeClaim:
+            claimName: pinchflat-pvc
+      {{- end }}
