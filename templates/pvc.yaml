@@ -1,10 +1,11 @@
+{{ $namespace := .Values.namespace }}
 {{- if .Values.persistence.enabled }}
 {{ with .Values.persistence }}
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pinchflat-pvc
-  namespace: {{ .Values.namespace | default "pinchflat" }}
+  namespace: {{ $namespace | default "pinchflat" }}
 spec:
   accessModes:
     - ReadWriteOnce
