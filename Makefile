@@ -22,7 +22,7 @@ upload:
 dockerized:
 	$(dockercmd) \
 		-e GITHUB_TOKEN \
-		--entrypoint sh $(image) -c 'apk add make && make prep-git package index upload'
+		--entrypoint sh $(image) -c 'apk add make && make prep-git package upload index'
 	# Im just dumb lul
 	sudo chown -R $(USER):$(USER) .
 	git add . && git commit -m 'chore: bump version'
