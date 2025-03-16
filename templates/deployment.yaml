@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pinchflat
-  namespace: {{ .Values.namespace | default "pinchflat" }}
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
   replicas: 1
   selector:
