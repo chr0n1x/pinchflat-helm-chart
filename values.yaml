@@ -24,6 +24,10 @@ ingress:
   enabled: true
   class: nginx
   host: pinchflat.home.k8s
+  tls:
+    - hosts:
+        - blahblah.org
+      secretName: foobar
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"

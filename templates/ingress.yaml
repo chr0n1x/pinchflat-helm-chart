@@ -8,11 +8,15 @@ metadata:
   labels:
     app.kubernetes.io/name: pinchflat
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    {{- with .Values.ingress.annotations }}
+      {{ toYaml . | indent 4 }}
+    {{- end }}
 spec:
   ingressClassName: nginx
+  {{- if .Values.ingress.tls }}
+  tls:
+    {{ toYaml .Values.ingress.tls | indent 4 }}
+  {{- end -}}
   rules:
     - host: {{ .Values.ingress.host }}
       http:
