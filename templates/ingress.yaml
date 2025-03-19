@@ -9,13 +9,13 @@ metadata:
     app.kubernetes.io/name: pinchflat
   annotations:
     {{- if .Values.ingress.annotations }}
-      {{ toYaml .Values.ingress.annotations | indent 4 }}
+      {{ .Values.ingress.annotations | toYaml | indent 4 }}
     {{- end }}
 spec:
   ingressClassName: nginx
   {{- if .Values.ingress.tls }}
   tls:
-    {{ toYaml .Values.ingress.tls | indent 4 }}
+    {{ .Values.ingress.tls | toYaml | indent 4 }}
   {{- end -}}
   rules:
     - host: {{ .Values.ingress.host }}
