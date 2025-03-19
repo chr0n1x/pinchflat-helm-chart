@@ -8,7 +8,7 @@ metadata:
   labels:
     app.kubernetes.io/name: pinchflat
   annotations:
-    {{- with .Values.ingress.annotations }}
+    {{- if .Values.ingress.annotations }}
       {{ toYaml .Values.ingress.annotations | indent 4 }}
     {{- end }}
 spec:
