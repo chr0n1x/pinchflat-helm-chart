@@ -6,7 +6,7 @@ I use the default image for pinchflat. For more information, check out [the repo
 
 # TODO
 
-- ~~create a config map for configurations~~ ✅ supporting both `/downloads` and `/config` as of `0.2.0`
+- ~~create a config map for configurations~~ ✅ supporting both `/downloads` and `/config` as of `0.2.4`
 - actually use `helm` default values like `.Chart.Name` for various fields.
 - probably a lot more; general things required for productionization.
 - actually use github actions properly. I currently run `make` locally and it "just works" <sup>tm</sup>
