@@ -22,16 +22,15 @@ spec:
             - name: TZ
               value: {{ .Values.deployment.env.TZ | default "America/New_York" }}
       {{- if or .Values.persistence.enabled .Values.db.persistence.enabled }}
-      volumeMounts:
+          volumeMounts:
       {{- end }}
-
       {{- if .Values.persistence.enabled }}
-          - name: downloads-volume
-            mountPath: /downloads
+            - name: downloads-volume
+              mountPath: /downloads
       {{- end }}
       {{- if .Values.db.persistence.enabled }}
-          - name: config-volume
-            mountPath: /config
+            - name: config-volume
+              mountPath: /config
       {{- end }}
 
       {{- if or .Values.persistence.enabled .Values.db.persistence.enabled }}
