@@ -36,7 +36,7 @@ db:
     # one does
     # after your first install, fill in this field with the created PV name
     #
-    existingVolumeName: pvc-<another-big-uuid>
+    # existingVolumeName: pvc-<another-big-uuid>
 
 ingress:
   enabled: true
