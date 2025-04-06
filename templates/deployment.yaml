@@ -21,12 +21,31 @@ spec:
           env:
             - name: TZ
               value: {{ .Values.deployment.env.TZ | default "America/New_York" }}
+      {{- if or .Values.persistence.enabled .Values.db.persistence.enabled }}
+      volumeMounts:
+      {{- end }}
+
       {{- if .Values.persistence.enabled }}
-          volumeMounts:
           - name: downloads-volume
             mountPath: /downloads
+      {{- end }}
+      {{- if .Values.persistence.enabled }}
+          - name: config-volume
+            mountPath: /config
+      {{- end }}
+
+      {{- if or .Values.persistence.enabled .Values.db.persistence.enabled }}
       volumes:
+      {{- end }}
+
+      {{- if .Values.persistence.enabled }}
         - name: downloads-volume
           persistentVolumeClaim:
             claimName: pinchflat-pvc
+      {{- end }}
+
+      {{- if .Values.db.persistence.enabled }}
+        - name: config-volume
+          persistentVolumeClaim:
+            claimName: pinchflat-db-pvc
       {{- end }}

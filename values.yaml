@@ -20,6 +20,23 @@ persistence:
   #
   # existingVolumeName: pvc-<big-uuid>
 
+db:
+  persistence:
+    enabled: true
+    # TODO: no idea what a good default size should be
+    size: 128Gi
+    # highly recommend not using a NAS/SMB share here for the time being
+    # https://github.com/kieraneglin/pinchflat/wiki/Installation#important-file-permissions
+    # I might add in configs to the deployment to tweak things to allow for an
+    # easier time, but sqllite dbs running over network storage have not been
+    # kind to me in the past so this might take a while
+    storageClass: longhorn
+    # most CSI drivers will create a pvc here, check to make sure your default
+    # one does
+    # after your first install, fill in this field with the created PV name
+    #
+    existingVolumeName: pvc-<another-big-uuid>
+
 ingress:
   enabled: true
   class: nginx
