@@ -6,6 +6,7 @@ service:
   type: NodePort
 
 deployment:
+  replicas: 1
   image: ghcr.io/kieraneglin/pinchflat:latest
   env:
     TZ: America/New_York

@@ -4,7 +4,7 @@ metadata:
   name: pinchflat
   namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
-  replicas: 1
+  replicas: {{ default 1 .Values.deployment.replicas }}
   selector:
     matchLabels:
       app: pinchflat
