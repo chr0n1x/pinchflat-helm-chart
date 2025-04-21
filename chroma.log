@@ -1,0 +1,415 @@
+INFO:     [20-04-2025 21:45:56] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:45:57] Starting component System
+DEBUG:    [20-04-2025 21:45:57] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:45:57] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:45:57] Starting component Posthog
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:45:57] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:45:57] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:45:57] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:45:57] Started server process [4932]
+INFO:     [20-04-2025 21:45:57] Waiting for application startup.
+INFO:     [20-04-2025 21:45:57] Application startup complete.
+INFO:     [20-04-2025 21:45:57] Uvicorn running on http://localhost:39635 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:45:57] 127.0.0.1:55846 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:57] 127.0.0.1:55862 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:57] 127.0.0.1:55862 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:57] 127.0.0.1:55862 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:57] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:45:57] Starting component System
+DEBUG:    [20-04-2025 21:45:57] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:45:57] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:45:57] Starting component Posthog
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:45:57] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:45:57] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:45:57] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:45:57] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:45:57] Started server process [4982]
+INFO:     [20-04-2025 21:45:57] Waiting for application startup.
+INFO:     [20-04-2025 21:45:57] Application startup complete.
+INFO:     [20-04-2025 21:45:57] Uvicorn running on http://localhost:38261 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:45:57] 127.0.0.1:34604 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:58] 127.0.0.1:34612 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:58] 127.0.0.1:34612 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:45:58] 127.0.0.1:34612 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:55862 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/f6e2d78d8493312f0ed032f56ad5a0027f252a11bc8cff88f9703d5e71bb99a HTTP/1.1" 400
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] Shutting down
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:01] Waiting for application shutdown.
+DEBUG:    [20-04-2025 21:46:01] Stopping component System
+DEBUG:    [20-04-2025 21:46:01] Stopping component SegmentAPI
+DEBUG:    [20-04-2025 21:46:01] Stopping component LocalExecutor
+DEBUG:    [20-04-2025 21:46:01] Stopping component LocalSegmentManager
+DEBUG:    [20-04-2025 21:46:01] Stopping component SimpleAsyncRateLimitEnforcer
+DEBUG:    [20-04-2025 21:46:01] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:46:01] Stopping component Posthog
+DEBUG:    [20-04-2025 21:46:01] Stopping component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:46:01] Stopping component SqliteDB
+DEBUG:    [20-04-2025 21:46:01] Stopping component OpenTelemetryClient
+INFO:     [20-04-2025 21:46:01] Application shutdown complete.
+INFO:     [20-04-2025 21:46:01] Finished server process [4932]
+DEBUG:    [20-04-2025 21:46:01] Starting component PersistentLocalHnswSegment
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/add HTTP/1.1" 201
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/add HTTP/1.1" 201
+INFO:     [20-04-2025 21:46:01] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/add HTTP/1.1" 201
+INFO:     [20-04-2025 21:46:02] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/add HTTP/1.1" 201
+INFO:     [20-04-2025 21:46:02] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/add HTTP/1.1" 201
+INFO:     [20-04-2025 21:46:02] 127.0.0.1:34612 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/get HTTP/1.1" 200
+INFO:     [20-04-2025 21:46:02] Shutting down
+INFO:     [20-04-2025 21:46:02] Waiting for application shutdown.
+DEBUG:    [20-04-2025 21:46:02] Stopping component System
+DEBUG:    [20-04-2025 21:46:02] Stopping component SegmentAPI
+DEBUG:    [20-04-2025 21:46:02] Stopping component LocalExecutor
+DEBUG:    [20-04-2025 21:46:02] Stopping component PersistentLocalHnswSegment
+DEBUG:    [20-04-2025 21:46:02] Stopping component LocalSegmentManager
+DEBUG:    [20-04-2025 21:46:02] Stopping component SimpleAsyncRateLimitEnforcer
+DEBUG:    [20-04-2025 21:46:02] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:46:02] Stopping component Posthog
+DEBUG:    [20-04-2025 21:46:02] Stopping component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:46:02] Stopping component SqliteDB
+DEBUG:    [20-04-2025 21:46:02] Stopping component OpenTelemetryClient
+INFO:     [20-04-2025 21:46:02] Application shutdown complete.
+INFO:     [20-04-2025 21:46:02] Finished server process [4982]
+INFO:     [20-04-2025 21:49:54] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:49:54] Starting component System
+DEBUG:    [20-04-2025 21:49:54] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:49:54] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:49:54] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:49:54] Starting component Posthog
+DEBUG:    [20-04-2025 21:49:54] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:49:54] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:49:54] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:49:54] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:49:54] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:49:54] Started server process [5881]
+INFO:     [20-04-2025 21:49:54] Waiting for application startup.
+INFO:     [20-04-2025 21:49:54] Application startup complete.
+INFO:     [20-04-2025 21:49:54] Uvicorn running on http://localhost:55575 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:49:54] 127.0.0.1:51490 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:54] 127.0.0.1:51494 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:54] 127.0.0.1:51494 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:54] 127.0.0.1:51494 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:56] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:49:56] Starting component System
+DEBUG:    [20-04-2025 21:49:56] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:49:56] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:49:56] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:49:56] Starting component Posthog
+DEBUG:    [20-04-2025 21:49:56] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:49:56] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:49:56] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:49:56] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:49:56] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:49:56] Started server process [5941]
+INFO:     [20-04-2025 21:49:56] Waiting for application startup.
+INFO:     [20-04-2025 21:49:56] Application startup complete.
+INFO:     [20-04-2025 21:49:56] Uvicorn running on http://localhost:54063 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:49:57] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:49:57] Starting component System
+DEBUG:    [20-04-2025 21:49:57] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:49:57] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:49:57] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:49:57] Starting component Posthog
+DEBUG:    [20-04-2025 21:49:57] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:49:57] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:49:57] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:49:57] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:49:57] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:49:57] Started server process [6015]
+INFO:     [20-04-2025 21:49:57] Waiting for application startup.
+INFO:     [20-04-2025 21:49:57] Application startup complete.
+INFO:     [20-04-2025 21:49:57] Uvicorn running on http://localhost:53501 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:49:57] 127.0.0.1:45694 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:57] 127.0.0.1:45700 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:57] 127.0.0.1:45700 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:57] 127.0.0.1:45700 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:49:59] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:49:59] Starting component System
+DEBUG:    [20-04-2025 21:49:59] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:49:59] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:49:59] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:49:59] Starting component Posthog
+DEBUG:    [20-04-2025 21:49:59] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:49:59] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:49:59] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:49:59] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:49:59] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:49:59] Started server process [6072]
+INFO:     [20-04-2025 21:49:59] Waiting for application startup.
+INFO:     [20-04-2025 21:49:59] Application startup complete.
+INFO:     [20-04-2025 21:49:59] Uvicorn running on http://localhost:45277 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:49:59] 127.0.0.1:47800 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:01] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:01] Starting component System
+DEBUG:    [20-04-2025 21:50:01] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:01] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:01] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:01] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:01] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:01] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:01] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:01] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:01] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:01] Started server process [6149]
+INFO:     [20-04-2025 21:50:01] Waiting for application startup.
+INFO:     [20-04-2025 21:50:01] Application startup complete.
+INFO:     [20-04-2025 21:50:01] Uvicorn running on http://localhost:42445 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:01] 127.0.0.1:43042 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:01] 127.0.0.1:43050 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:01] 127.0.0.1:43050 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:01] 127.0.0.1:43050 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:02] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:02] Starting component System
+DEBUG:    [20-04-2025 21:50:02] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:02] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:02] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:02] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:02] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:02] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:02] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:02] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:02] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:02] Started server process [6209]
+INFO:     [20-04-2025 21:50:02] Waiting for application startup.
+INFO:     [20-04-2025 21:50:02] Application startup complete.
+INFO:     [20-04-2025 21:50:02] Uvicorn running on http://localhost:56003 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:03] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:03] Starting component System
+DEBUG:    [20-04-2025 21:50:03] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:03] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:03] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:03] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:03] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:03] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:03] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:03] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:03] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:03] Started server process [6253]
+INFO:     [20-04-2025 21:50:03] Waiting for application startup.
+INFO:     [20-04-2025 21:50:03] Application startup complete.
+INFO:     [20-04-2025 21:50:03] Uvicorn running on http://localhost:43871 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:04] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:04] Starting component System
+DEBUG:    [20-04-2025 21:50:04] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:04] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:04] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:04] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:04] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:04] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:04] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:04] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:04] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:04] Started server process [6319]
+INFO:     [20-04-2025 21:50:04] Waiting for application startup.
+INFO:     [20-04-2025 21:50:04] Application startup complete.
+INFO:     [20-04-2025 21:50:04] Uvicorn running on http://localhost:38701 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:05] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:05] Starting component System
+DEBUG:    [20-04-2025 21:50:05] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:05] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:05] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:05] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:05] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:05] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:05] Started server process [6371]
+INFO:     [20-04-2025 21:50:05] Waiting for application startup.
+INFO:     [20-04-2025 21:50:05] Application startup complete.
+INFO:     [20-04-2025 21:50:05] Uvicorn running on http://localhost:55603 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:05] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:50:05] Starting component System
+DEBUG:    [20-04-2025 21:50:05] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:50:05] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:05] Starting component Posthog
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:05] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:05] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:50:05] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:50:05] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:50:05] Started server process [6415]
+INFO:     [20-04-2025 21:50:05] Waiting for application startup.
+INFO:     [20-04-2025 21:50:05] Application startup complete.
+INFO:     [20-04-2025 21:50:05] Uvicorn running on http://localhost:48717 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:50:05] 127.0.0.1:52690 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:05] 127.0.0.1:52704 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:05] 127.0.0.1:52704 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:05] 127.0.0.1:52704 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:10] 127.0.0.1:52704 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/f6e2d78d8493312f0ed032f56ad5a0027f252a11bc8cff88f9703d5e71bb99a HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:10] 127.0.0.1:52704 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:10] 127.0.0.1:52704 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+DEBUG:    [20-04-2025 21:50:10] Starting component PersistentLocalHnswSegment
+INFO:     [20-04-2025 21:50:10] 127.0.0.1:52704 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/query HTTP/1.1" 200
+INFO:     [20-04-2025 21:50:11] Shutting down
+INFO:     [20-04-2025 21:50:11] Waiting for application shutdown.
+DEBUG:    [20-04-2025 21:50:11] Stopping component System
+DEBUG:    [20-04-2025 21:50:11] Stopping component SegmentAPI
+DEBUG:    [20-04-2025 21:50:11] Stopping component LocalExecutor
+DEBUG:    [20-04-2025 21:50:11] Stopping component PersistentLocalHnswSegment
+DEBUG:    [20-04-2025 21:50:11] Stopping component LocalSegmentManager
+DEBUG:    [20-04-2025 21:50:11] Stopping component SimpleAsyncRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:11] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:50:11] Stopping component Posthog
+DEBUG:    [20-04-2025 21:50:11] Stopping component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:50:11] Stopping component SqliteDB
+DEBUG:    [20-04-2025 21:50:11] Stopping component OpenTelemetryClient
+INFO:     [20-04-2025 21:50:11] Application shutdown complete.
+INFO:     [20-04-2025 21:50:11] Finished server process [6415]
+INFO:     [20-04-2025 21:51:01] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:01] Starting component System
+DEBUG:    [20-04-2025 21:51:01] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:01] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:01] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:01] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:01] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:01] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:01] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:01] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:01] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:01] Started server process [6564]
+INFO:     [20-04-2025 21:51:01] Waiting for application startup.
+INFO:     [20-04-2025 21:51:01] Application startup complete.
+INFO:     [20-04-2025 21:51:01] Uvicorn running on http://localhost:46575 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:02] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:02] Starting component System
+DEBUG:    [20-04-2025 21:51:02] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:02] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:02] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:02] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:02] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:02] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:02] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:02] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:02] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:02] Started server process [6616]
+INFO:     [20-04-2025 21:51:02] Waiting for application startup.
+INFO:     [20-04-2025 21:51:02] Application startup complete.
+INFO:     [20-04-2025 21:51:02] Uvicorn running on http://localhost:48163 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:02] 127.0.0.1:35760 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:02] 127.0.0.1:35768 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:02] 127.0.0.1:35768 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:02] 127.0.0.1:35768 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:05] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:05] Starting component System
+DEBUG:    [20-04-2025 21:51:05] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:05] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:05] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:05] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:05] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:05] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:05] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:05] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:05] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:06] Started server process [6692]
+INFO:     [20-04-2025 21:51:06] Waiting for application startup.
+INFO:     [20-04-2025 21:51:06] Application startup complete.
+INFO:     [20-04-2025 21:51:06] Uvicorn running on http://localhost:59525 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:06] 127.0.0.1:37254 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:06] 127.0.0.1:37260 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:06] 127.0.0.1:37260 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:06] 127.0.0.1:37260 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:09] 127.0.0.1:37260 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/f6e2d78d8493312f0ed032f56ad5a0027f252a11bc8cff88f9703d5e71bb99a HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:09] 127.0.0.1:37260 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:09] 127.0.0.1:37260 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+DEBUG:    [20-04-2025 21:51:09] Starting component PersistentLocalHnswSegment
+INFO:     [20-04-2025 21:51:09] 127.0.0.1:37260 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/query HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:10] Shutting down
+INFO:     [20-04-2025 21:51:10] Waiting for application shutdown.
+DEBUG:    [20-04-2025 21:51:10] Stopping component System
+DEBUG:    [20-04-2025 21:51:10] Stopping component SegmentAPI
+DEBUG:    [20-04-2025 21:51:10] Stopping component LocalExecutor
+DEBUG:    [20-04-2025 21:51:10] Stopping component PersistentLocalHnswSegment
+DEBUG:    [20-04-2025 21:51:10] Stopping component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:10] Stopping component SimpleAsyncRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:10] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:10] Stopping component Posthog
+DEBUG:    [20-04-2025 21:51:10] Stopping component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:10] Stopping component SqliteDB
+DEBUG:    [20-04-2025 21:51:10] Stopping component OpenTelemetryClient
+INFO:     [20-04-2025 21:51:10] Application shutdown complete.
+INFO:     [20-04-2025 21:51:10] Finished server process [6692]
+INFO:     [20-04-2025 21:51:18] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:18] Starting component System
+DEBUG:    [20-04-2025 21:51:18] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:18] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:18] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:18] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:18] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:18] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:18] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:18] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:18] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:18] Started server process [6805]
+INFO:     [20-04-2025 21:51:18] Waiting for application startup.
+INFO:     [20-04-2025 21:51:18] Application startup complete.
+INFO:     [20-04-2025 21:51:18] Uvicorn running on http://localhost:48271 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:18] 127.0.0.1:57172 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:18] 127.0.0.1:57180 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:18] 127.0.0.1:57180 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:18] 127.0.0.1:57180 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:21] 127.0.0.1:57180 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/f6e2d78d8493312f0ed032f56ad5a0027f252a11bc8cff88f9703d5e71bb99a HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:21] 127.0.0.1:57180 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:21] 127.0.0.1:57180 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/count HTTP/1.1" 200
+DEBUG:    [20-04-2025 21:51:21] Starting component PersistentLocalHnswSegment
+INFO:     [20-04-2025 21:51:21] 127.0.0.1:57180 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/69113639-6615-44dd-afdf-6c52f310fd62/query HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:23] Shutting down
+INFO:     [20-04-2025 21:51:23] Waiting for application shutdown.
+DEBUG:    [20-04-2025 21:51:23] Stopping component System
+DEBUG:    [20-04-2025 21:51:23] Stopping component SegmentAPI
+DEBUG:    [20-04-2025 21:51:23] Stopping component LocalExecutor
+DEBUG:    [20-04-2025 21:51:23] Stopping component PersistentLocalHnswSegment
+DEBUG:    [20-04-2025 21:51:23] Stopping component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:23] Stopping component SimpleAsyncRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:23] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:23] Stopping component Posthog
+DEBUG:    [20-04-2025 21:51:23] Stopping component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:23] Stopping component SqliteDB
+DEBUG:    [20-04-2025 21:51:23] Stopping component OpenTelemetryClient
+INFO:     [20-04-2025 21:51:23] Application shutdown complete.
+INFO:     [20-04-2025 21:51:23] Finished server process [6805]
+INFO:     [20-04-2025 21:51:29] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:30] Starting component System
+DEBUG:    [20-04-2025 21:51:30] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:30] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:30] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:30] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:30] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:30] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:30] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:30] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:30] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:30] Started server process [6941]
+INFO:     [20-04-2025 21:51:30] Waiting for application startup.
+INFO:     [20-04-2025 21:51:30] Application startup complete.
+INFO:     [20-04-2025 21:51:30] Uvicorn running on http://localhost:46109 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:40] Set chroma_server_nofile to 65535
+DEBUG:    [20-04-2025 21:51:40] Starting component System
+DEBUG:    [20-04-2025 21:51:40] Starting component OpenTelemetryClient
+DEBUG:    [20-04-2025 21:51:40] Starting component SqliteDB
+DEBUG:    [20-04-2025 21:51:40] Starting component SimpleQuotaEnforcer
+DEBUG:    [20-04-2025 21:51:40] Starting component Posthog
+DEBUG:    [20-04-2025 21:51:40] Starting component SimpleRateLimitEnforcer
+DEBUG:    [20-04-2025 21:51:40] Starting component LocalSegmentManager
+DEBUG:    [20-04-2025 21:51:40] Starting component LocalExecutor
+DEBUG:    [20-04-2025 21:51:40] Starting component SegmentAPI
+DEBUG:    [20-04-2025 21:51:40] Starting component SimpleAsyncRateLimitEnforcer
+INFO:     [20-04-2025 21:51:40] Started server process [7155]
+INFO:     [20-04-2025 21:51:40] Waiting for application startup.
+INFO:     [20-04-2025 21:51:40] Application startup complete.
+INFO:     [20-04-2025 21:51:40] Uvicorn running on http://localhost:47685 (Press CTRL+C to quit)
+INFO:     [20-04-2025 21:51:40] 127.0.0.1:37200 - "GET /api/v1/heartbeat HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:40] 127.0.0.1:37216 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:40] 127.0.0.1:37216 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [20-04-2025 21:51:40] 127.0.0.1:37216 - "GET /api/v2/tenants/default_tenant/databases/default_database?tenant=default_tenant HTTP/1.1" 200
