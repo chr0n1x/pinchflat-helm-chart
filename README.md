@@ -10,6 +10,7 @@ I use the default image for pinchflat. For more information, check out [the repo
 - actually use `helm` default values like `.Chart.Name` for various fields.
 - probably a lot more; general things required for productionization.
 - actually use github actions properly. I currently run `make` locally and it "just works" <sup>tm</sup>
+- migrate towards using `StatefulSet`s
 
 # Help Needed/Welcome via PRs
 
