@@ -1,0 +1,17 @@
+{{- if .Values.persistence.enabled }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pinchflat-pvc
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.persistence.size }}
+  storageClassName: {{ .Values.persistence.storageClass }}
+  {{- if .Values.persistence.existingVolumeName }}
+  volumeName: {{ .Values.persistence.existingVolumeName }}
+  {{- end }}
+{{- end }}

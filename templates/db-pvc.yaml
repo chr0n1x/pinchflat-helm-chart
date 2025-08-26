@@ -1,0 +1,19 @@
+{{- if .Values.db.persistence.enabled }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pinchflat-db-pvc
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
+spec:
+  accessModes:
+    # TODO: not sure if ReadWriteMany would be safe here; I want to so upping
+    # replicas is safe(r) for HA but...eh
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.db.persistence.size }}
+  storageClassName: {{ .Values.db.persistence.storageClass }}
+  {{- if .Values.db.persistence.existingVolumeName }}
+  volumeName: {{ .Values.db.persistence.existingVolumeName }}
+  {{- end }}
+{{- end }}

@@ -1,0 +1,31 @@
+{{- if .Values.ingress.enabled }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pinchflat-ingress
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
+  labels:
+    app.kubernetes.io/name: pinchflat
+  annotations:
+{{- if .Values.ingress.annotations }}
+{{ .Values.ingress.annotations | toYaml | indent 4 }}
+{{- end }}
+spec:
+  ingressClassName: nginx
+{{- if .Values.ingress.tls }}
+  tls:
+{{ .Values.ingress.tls | toYaml | indent 4 }}
+{{- end }}
+  rules:
+    - host: {{ .Values.ingress.host }}
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: pinchflat-svc
+                port:
+                  number: 8945
+{{- end }}

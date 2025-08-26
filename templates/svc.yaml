@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pinchflat-svc
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
+spec:
+  selector:
+    app: pinchflat
+  ports:
+  - protocol: TCP
+    name: https
+    port: 443
+    targetPort: 8945
+  - protocol: TCP
+    name: http
+    port: 80
+    targetPort: 8945
+  type: {{ .Values.service.type | default "NodePort" }}
