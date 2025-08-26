@@ -16,7 +16,7 @@ spec:
       containers:
         - name: pinchflat-app
           image: {{ .Values.deployment.image | default "ghcr.io/kieraneglin/pinchflat:latest" }}
-          imagePullPolicy: Always
+          imagePullPolicy: {{ .Values.deployment.imagePullPolicy | default "Always" }}
           ports:
             - containerPort: 8945
           env:
