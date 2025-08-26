@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  pinchflat:
+  - apiVersion: 1.0.0
+    created: "2025-08-26T04:39:06.102899327Z"
+    description: simple pinchflat deployment
+    digest: 1c4ebef3dc34d622cdc25cccea8deb70610a0a48ad6f850540d11c3efc9f7f65
+    name: pinchflat
+    type: application
+    urls:
+    - https://github.com/chr0n1x/pinchflat-helm-chart/releases/download/pinchflat-0.2.7/pinchflat-0.2.7.tgz
+    version: 0.2.7
+generated: "2025-08-26T04:39:06.102905599Z"
