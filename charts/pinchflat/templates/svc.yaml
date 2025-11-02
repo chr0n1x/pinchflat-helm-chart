@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pinchflat-svc
-  namespace: {{ .Release.Namespace | .Values.namespace | default "pinchflat" }}
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
   selector:
     app: pinchflat

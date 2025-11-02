@@ -3,7 +3,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pinchflat-pvc
-  namespace: {{ .Release.Namespace | .Values.namespace | default "pinchflat" }}
+  namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
   accessModes:
     - ReadWriteOnce
