@@ -21,6 +21,12 @@ spec:
       tolerations:
 {{ . | toYaml | indent 8 }}
       {{- end }}
+
+      {{- with .Values.deployment.nodeSelector }}
+      nodeSelector:
+{{ . | toYaml | indent 8 }}
+      {{- end }}
+
       containers:
         - name: pinchflat-app
           image: {{ .Values.deployment.image | default "ghcr.io/kieraneglin/pinchflat:latest" }}
