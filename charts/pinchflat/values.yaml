@@ -6,6 +6,8 @@ service:
   type: NodePort
 
 deployment:
+  strategy:
+    type: Recreate
   replicas: 1
   image: ghcr.io/kieraneglin/pinchflat:latest
   env:

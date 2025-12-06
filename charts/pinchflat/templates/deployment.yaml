@@ -8,6 +8,10 @@ spec:
   selector:
     matchLabels:
       app: pinchflat
+  {{- with .Values.deployment.strategy }}
+  strategy:
+{{ . | toYaml | indent 4 }}
+  {{- end }}
   template:
     metadata:
       labels:
