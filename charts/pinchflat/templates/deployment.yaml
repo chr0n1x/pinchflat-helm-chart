@@ -4,6 +4,10 @@ metadata:
   name: pinchflat
   namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
+  {{- with .Values.deployment.tolerations }}
+  tolerations:
+{{ . | toYaml | indent 4 }}
+  {{- end }}
   replicas: {{ default 1 .Values.deployment.replicas }}
   selector:
     matchLabels:

@@ -1,6 +1,6 @@
 ---
 apiVersion: 1.0.0
 name: pinchflat
-version: 0.2.9
+version: 0.2.10
 description: simple pinchflat deployment
 type: application
