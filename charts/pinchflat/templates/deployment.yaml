@@ -4,10 +4,6 @@ metadata:
   name: pinchflat
   namespace: {{ .Release.Namespace | default "pinchflat" }}
 spec:
-  {{- with .Values.deployment.tolerations }}
-  tolerations:
-{{ . | toYaml | indent 4 }}
-  {{- end }}
   replicas: {{ default 1 .Values.deployment.replicas }}
   selector:
     matchLabels:
@@ -21,6 +17,10 @@ spec:
       labels:
         app: pinchflat
     spec:
+      {{- with .Values.deployment.tolerations }}
+      tolerations:
+{{ . | toYaml | indent 8 }}
+      {{- end }}
       containers:
         - name: pinchflat-app
           image: {{ .Values.deployment.image | default "ghcr.io/kieraneglin/pinchflat:latest" }}
